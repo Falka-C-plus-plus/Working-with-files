@@ -2,10 +2,12 @@
 //
 
 #include <iostream>
-
+#include "Person.h";
+using namespace std;
 int main()
 {
-    std::cout << "Hello World!\n";
+    Person* person = new Person("Vladislav", 16);
+    cout << person;
 }
 
 // Запуск программы: CTRL+F5 или меню "Отладка" > "Запуск без отладки"
