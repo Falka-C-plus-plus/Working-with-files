@@ -6,8 +6,11 @@
 using namespace std;
 int main()
 {
-    Person* person = new Person("Vladislav", 16);
+    Person* person = new Person();
+    Person* person2 = new Person("Vladislav", 16);
+    person->LoadFile();
     cout << person;
+    delete person, person2;
 }
 
 // Запуск программы: CTRL+F5 или меню "Отладка" > "Запуск без отладки"
